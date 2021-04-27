@@ -7,6 +7,7 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
 }
+
 body {
   font-family: "Roboto Condesed" sans-serif;
 }
@@ -45,6 +46,13 @@ body {
   height: 6rem !important;
   border-top: 0.1875rem solid;
 }
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+
+
+  }
+}
 /***Nav Links***/
 
 .nav a.nav-link {
@@ -69,6 +77,9 @@ nav ul li {
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
 }
+nav {
+  z-index: 2;
+}
 
 /***Header***/
 .header-wraper {
@@ -86,13 +97,26 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: "Roboto Condesed", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .main-info h1 {
   color: var(--primary-orange);
   text-transform: uppercase;
+
 }
 
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.5rem !important;
+    
+  }
+}
 
 /***typed text***/
 
@@ -100,8 +124,56 @@ nav ul li {
   font-size: 2rem;
   color: var(--primary-white);
 }
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.5rem !important; 
+  }
+  .typed-text: 1.7rem;
+}
 
 /***header**/
 .btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
 
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+  display: none;
+}
+
+.skill {
+  background-color: lightgray;
+  height: 50vh;
+}
+
+.logos {
+  font-size: 150px;
+  font-weight: 90000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.about-section {
+  height: 100vh;
+  background-color: black;
+  color: white;
 }
