@@ -20,6 +20,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
@@ -79,6 +80,7 @@ nav ul li {
 }
 nav {
   z-index: 2;
+  
 }
 
 /***Header***/
