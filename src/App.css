@@ -40,6 +40,7 @@ body {
 
 .logo {
   width: 6.25rem;
+  
 }
 .navbar-brand {
   max-width: 17.25rem;
@@ -140,7 +141,7 @@ nav {
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
-  margin: 2rem;
+  margin: 6rem;
 }
 
 .btn-main-offer:hover {
@@ -172,6 +173,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  color: #282c34;
   
 }
 .about-section {
@@ -179,3 +181,10 @@ nav {
   background-color: black;
   color: white;
 }
+
+.resize {
+  width: 300px;
+    height: auto;
+}
+
+
