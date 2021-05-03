@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import {Link} from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -30,19 +31,19 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="about" smooth={true} duration={1000} >
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="projects" smooth={true} duration={1000} >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="contact" smooth={true} duration={1000} >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

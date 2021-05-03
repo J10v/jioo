@@ -10,6 +10,7 @@
 
 body {
   font-family: "Roboto Condesed" sans-serif;
+  scroll-behavior: smooth;
 }
 .App-header {
   background-color: #282c34;
@@ -47,14 +48,16 @@ body {
   padding: 0 !important;
   height: 6rem !important;
   border-top: 0.1875rem solid;
+  
 }
 @media(max-width: 768px) {
   .navbar-brand {
     width: 7rem;
-
+    
 
   }
 }
+
 /***Nav Links***/
 
 .nav a.nav-link {

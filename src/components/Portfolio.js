@@ -5,7 +5,7 @@ import p3 from "../p3.jpg";
 import p4 from "../p4.jpg";
 function Portfolio() {
     return (
-        <div className="portfolio">
+        <div className="portfolio" id="projects">
             <h1>Projects</h1>
             <hr />
             {" "}
