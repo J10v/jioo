@@ -1,18 +1,19 @@
 import React from "react";
+import p1 from "../p1.jpg";
 
 function About() {
   return (
-    <div className="about-section" id="about">
+    <div className=  "about-section" id="about">
+      <div className="col-6 col-sm-3 text-center">
       <h1> About Jiovanni </h1>
       <hr />
-      <h2>EDUCATION</h2>
       <h3>
         {" "}
         I am a web developer in traning and recent Coding bootcamp (Nucamp)
         graduate and this is my personal website{" "}
       </h3>
-      <h2>PROJECTS</h2>
-      <hr />
+      
+      </div>
     </div>
   );
 }

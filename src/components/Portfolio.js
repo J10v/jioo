@@ -1,27 +1,62 @@
-import React from 'react'
-import p1 from "../p1.jpg";
-import p2 from "../p2.jpg";
-import p3 from "../p3.jpg";
-import p4 from "../p4.jpg";
-function Portfolio() {
-    return (
-        <div className="portfolio" id="projects">
-            <h1>Projects</h1>
-            <hr />
-            {" "}
-            <div className="port">
-                <h4>netflix-clone</h4>
-                <img class="resize" src={p1} alt=" " />
-                <h4>google-clone</h4>
-                <img class="resize" src={p2} alt=" " />
-                <h4>Daisy B.</h4>
-                <img class="resize" src={p3} alt=" " />
-                <h4>Wolfgang</h4>
-                <img class="resize" src={p4} alt=" " />
+import React from "react";
+import ONE from "./1.jpg";
+import two from "./2.jpg";
+import three from "./3.jpg";
+
+function Projects() {
+
+  return (
+
+    <div className="s1">
+      <div className="main-container">
+        <h1 class="title" id="projects">Some of my past projects</h1>
+
+        <div className="post-wrapper">
+          <div>
+            <div className="post">
+              <img className="thumbnail" src={ONE} alt="" />
+              <div className="post-preview">
+                <h6 className="post-title">Netflix Clone</h6>
+                <p className="post-intro">
+                  Designed built mantained a the lab managment system for FOI
+                  Laboratories
+                </p>
+                <a href="f">Read More</a>
+              </div>
             </div>
-            
+          </div>
+
+          <div>
+            <div class="post">
+              <img className="thumbnail" src={two} alt="" />
+              <div className="post-preview">
+                <h6 className="post-title">Nucamp Website</h6>
+                <p className="post-intro">
+                  Online store with paypal payments intergration and guest user
+                  shopping
+                </p>
+                <a href="f">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src={three} alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">Membership Website</h6>
+                <p class="post-intro">
+                  Modulized guide for online courses with step by step
+                  intructions
+                </p>
+                <a href="f">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Portfolio
+export default Projects;

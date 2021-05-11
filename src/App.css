@@ -183,6 +183,11 @@ nav {
   height: 100vh;
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-Content: "center";
+  align-Items: "center";
+  margin: "0.5rem";
 }
 
 .resize {
@@ -190,4 +195,62 @@ nav {
     height: auto;
 }
 
+h3 {
+  vertical-align: middle;
+}
+.resize1{
+    width: 300px;
+    height: auto;
+}
 
+/***portolio***/
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+
+}
+.row::after {
+  content: "";
+  display: table-column;
+  clear: both;
+}
+
+.post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.thumbnail{
+  width: 100%;
+  display: block;
+  height: 180px;
+  object-fit: cover;
+}
+.post{
+	border:1px solid var(--borderColor);
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+.post-preview{
+	background-color: #fff;
+	padding:15px;
+}
+.post-title{
+	color:black;
+	margin: 0;
+}
+
+.post-intro{
+	color:#4b5156;
+	font-size: 14px;
+}
+.s1 {
+  background-color: lightgray;
+}
