@@ -1,31 +1,29 @@
-import React from 'react'
+import React from "react";
 import photo from "./p.jpg";
-
 
 function About() {
   return (
-    <div className="about" id="about">
-      <div class="max-width">
-        <h2 class="title">About Me</h2>
-        <div className="about-content">
-          <div className="colum left">
-            <img src={photo} alt="">
-            </img>
-          </div>
-          <div className="colum right">
-            <div class="text"> im jio </div>
-            <p>loremfvdfvjsdfnmviedmv fiovmemvsfjkmv fvkjmndfkmdejfnckjd vckjfvnjfd vckj console.assert(vfj vj f
-              jfnvcjdsnvckjdfs v kfjnvldjfs vcjdsf jf vcjansdckjnasdclk, object)</p>
-          </div>
-        </div>
-      </div>
-      <section>
+    <div className="about">
+      <h2>About me</h2>
 
-      </section>
+      <main class="flex-container">
+        <section class="main-content" id="main-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            placeat cumque exercitationem vitae nisi tenetur delectus
+            praesentium doloremque, quibusdam nemo maxime laudantium et possimus
+            pariatur doloribus excepturi. Veritatis ex numquam inventore odit
+            dolorum mollitia dolorem, itaque atque non ratione molestias a
+            repellat ullam corporis quisquam ipsa sit iure tempore nulla.
+          </p>
+        </section>
+
+        <section class="sidebar" id="sidebar">
+          <img src={photo} alt=""></img>
+        </section>
+      </main>
     </div>
   );
 }
 
-export default About
-
-
+export default About;
